@@ -1,6 +1,6 @@
 ## 问题列表
 
-### 伪类 :active 生效
+### 伪类 :active 生效(安卓2.3.x无法实现:active生效)
 
 要CSS伪类:active生效，只需要给document绑定`touchstart`或`touchend`事件
 
@@ -120,6 +120,7 @@ Android web视图,至少在HTC EVO和三星的Galaxy Nexus中，文本输入框�
 详细参考<http://www.bielousov.com/2012/android-label-text-appears-in-input-field-as-a-placeholder/>
 注意，该属性会导致中文不能输入词组，只能单个字。感谢鬼哥与飞（游勇飞）贡献此问题与解决方案
 
+摩托罗拉 ME863 表单中有input:password会多出一个输入框，且输入完后不会去掉，影响体验。解决方法：以input:text替代input:password并设置-webkit-text-security: disc 而隐藏输入密码。
 
 ### JS动态生成的select下拉菜单在Android2.x版本的默认浏览器里不起作用
 
